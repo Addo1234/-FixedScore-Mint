@@ -41,7 +41,7 @@ A simple, responsive betting prediction platform built with pure HTML, CSS, and 
 
 - **Payment Gateway**: Paystack
 - **Currency**: GHS (Ghana Cedis)
-- **Amount**: 20 GHS (2000 kobo)
+- **Amount**: 50 GHS (2000 kobo)
 - **Storage**: VIP access stored in `localStorage` as `vipAccessUnlocked`
 
 ## Setup Instructions
