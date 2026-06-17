@@ -43,7 +43,7 @@ function initializePayment() {
     const reference = 'goalmint_' + Math.floor((Math.random() * 1000000000) + 1);
 
     const handler = PaystackPop.setup({
-        key: 'pk_live_YOUR_PAYSTACK_KEY_HERE', // Replace with your actual Paystack public key
+        key: 'pk_live_96a553401ff040dedd4cd39a82aa594eb5cf68bc',
         email: email,
         amount: amount,
         currency: 'GHS',
