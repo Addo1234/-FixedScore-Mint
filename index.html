@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoalMint Bets - Free Games and VIP Correct Score Predictions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Home Page -->
+    <div id="homePage" class="page active">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    ⚽ GoalMint Bets
+                </div>
+                <p class="tagline">Free Games and VIP Correct Score Predictions</p>
+            </div>
+
+            <div class="hero">
+                <h1>Welcome to GoalMint Bets</h1>
+                <p>Get accurate football prediction predictions delivered directly to you</p>
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-primary" onclick="navigateTo('freeGames')">
+                    Free Games
+                </button>
+                <button class="btn btn-secondary" onclick="navigateTo('vipCollege')">
+                    VIP College Score
+                </button>
+            </div>
+
+            <footer class="footer">
+                <p>&copy; 2024 GoalMint Bets. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Free Games Page -->
+    <div id="freeGamesPage" class="page">
+        <div class="container">
+            <div class="page-header">
+                <button class="btn-back" onclick="navigateTo('home')">← Back to Home</button>
+                <h1>Free Games</h1>
+            </div>
+
+            <div class="predictions-list">
+                <div class="prediction-card">
+                    <div class="prediction-header">
+                        <h3>Game 1</h3>
+                        <span class="badge badge-free">FREE</span>
+                    </div>
+                    <div class="prediction-body">
+                        <p class="prediction-text">⚽ Over 1.5 Goals</p>
+                        <p class="prediction-desc">Both teams expected to score in an entertaining match</p>
+                    </div>
+                </div>
+
+                <div class="prediction-card">
+                    <div class="prediction-header">
+                        <h3>Game 2</h3>
+                        <span class="badge badge-free">FREE</span>
+                    </div>
+                    <div class="prediction-body">
+                        <p class="prediction-text">🏟️ BTTS Yes</p>
+                        <p class="prediction-desc">Both teams to score in this fixture</p>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <p>&copy; 2024 GoalMint Bets. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- VIP College Score Page -->
+    <div id="vipCollegePage" class="page">
+        <div class="container">
+            <div class="page-header">
+                <button class="btn-back" onclick="navigateTo('home')">← Back to Home</button>
+                <h1>VIP College Score Predictions</h1>
+            </div>
+
+            <!-- Locked State -->
+            <div id="vipLocked" class="vip-locked">
+                <div class="lock-icon">🔒</div>
+                <h2>VIP Locked</h2>
+                <p class="lock-message">Pay to unlock Correct Score Predictions</p>
+                <p class="lock-amount">Amount: <strong>GHS 20.00</strong></p>
+                <button class="btn btn-success" onclick="initializePayment()">Unlock with Paystack</button>
+            </div>
+
+            <!-- Unlocked State -->
+            <div id="vipUnlocked" class="vip-unlocked" style="display: none;">
+                <div class="unlock-banner">
+                    <span class="unlock-icon">✓</span>
+                    <p>VIP Access Unlocked!</p>
+                </div>
+
+                <div class="predictions-list">
+                    <div class="prediction-card vip-card">
+                        <div class="prediction-header">
+                            <h3>Correct Score 1</h3>
+                            <span class="badge badge-vip">VIP</span>
+                        </div>
+                        <div class="prediction-body">
+                            <p class="prediction-text prediction-score">2 - 1</p>
+                            <p class="prediction-desc">Premium correct score prediction for exclusive members</p>
+                        </div>
+                    </div>
+
+                    <div class="prediction-card vip-card">
+                        <div class="prediction-header">
+                            <h3>Correct Score 2</h3>
+                            <span class="badge badge-vip">VIP</span>
+                        </div>
+                        <div class="prediction-body">
+                            <p class="prediction-text prediction-score">1 - 0</p>
+                            <p class="prediction-desc">Premium correct score prediction for exclusive members</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-danger" onclick="revokeVIPAccess()">Revoke Access</button>
+            </div>
+
+            <footer class="footer">
+                <p>&copy; 2026 GoalMint Bets. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
