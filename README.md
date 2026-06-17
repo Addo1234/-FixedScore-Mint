@@ -4,9 +4,9 @@ A simple, responsive betting prediction platform built with pure HTML, CSS, and 
 
 ## Features
 
-- **Home Page**: Welcome screen with quick access to Free Games and VIP predictions
+- **Home Page**: Welcome screen with quick access to Free Games and VIP Fixed Game
 - **Free Games Page**: Display 2 free predictions without any payment
-- **VIP College Score Page**: Locked predictions that unlock after Paystack payment
+- **VIP College Score Page**: Locked Fixed that unlock after Paystack payment
 - **Payment Integration**: Seamless Paystack payment system for VIP access
 - **Persistent Storage**: VIP access remains unlocked using browser localStorage
 - **Dark Modern Design**: Football betting themed with blue and red accents
@@ -21,8 +21,8 @@ A simple, responsive betting prediction platform built with pure HTML, CSS, and 
 - Clean hero section
 
 ### 2. Free Games Page
-- **Game 1**: Over 1.5 Goals (FREE)
-- **Game 2**: BTTS Yes (FREE)
+- **Argentinos Jrs 2 Vs Barracas Central 2**: Over 3.5 Goals (FREE)
+- **Sarmiento Junin 2 vs Talleres Cordoba 2**: BTTS Yes (FREE)
 - Back to home navigation
 - Simple, clean card design
 
@@ -30,11 +30,11 @@ A simple, responsive betting prediction platform built with pure HTML, CSS, and 
 - **Locked State**: Shows payment required message
   - Lock icon and description
   - Paystack payment button
-  - Amount: 20 GHS
+  - Amount: 50.00 GHS
 
 - **Unlocked State**: Shows after successful payment
-  - **Correct Score 1**: 2-1
-  - **Correct Score 2**: 1-0
+  - **IR Reykjavik vs Grotta 1**: 2-1
+  - **Tampereen Ilves vs FF Jaro2**: 1-0
   - Revoke access button
 
 ## Payment Details
