@@ -436,4 +436,173 @@ body {
         padding: 10px 20px;
         font-size: 13px;
     }
+}body {
+  font-family: Arial;
+  background: #0b1020;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.container {
+  padding: 40px;
+}
+
+h1, h2 {
+  color: #00ffcc;
+}
+
+.subtitle {
+  color: #888;
+  margin-top: -10px;
+  font-size: 14px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 10px;
+  background: #1e2a55;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #2a3a75;
+}
+
+.btn.vip {
+  background: #ff2d55;
+}
+
+.btn.vip:hover {
+  background: #cc1f41;
+}
+
+.btn.results {
+  background: #ff9500;
+}
+
+.btn.results:hover {
+  background: #cc7700;
+}
+
+.card {
+  background: #1a1f3a;
+  padding: 15px;
+  margin: 10px auto;
+  width: 80%;
+  border-radius: 10px;
+}
+
+/* Results Page Styles */
+.results-list {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.result-card {
+  background: #1a1f3a;
+  border-left: 5px solid #ccc;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  text-align: left;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.result-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.result-card.won {
+  border-left-color: #10b981;
+  background: linear-gradient(to right, rgba(16, 185, 129, 0.1), transparent);
+}
+
+.result-card.lost {
+  border-left-color: #ef4444;
+  background: linear-gradient(to right, rgba(239, 68, 68, 0.1), transparent);
+}
+
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.result-game {
+  font-weight: bold;
+  font-size: 16px;
+  color: #00ffcc;
+}
+
+.result-status {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.won-badge {
+  background: #10b981;
+  color: white;
+}
+
+.lost-badge {
+  background: #ef4444;
+  color: white;
+}
+
+.result-body {
+  margin-top: 10px;
+}
+
+.result-prediction {
+  margin: 5px 0;
+  font-size: 15px;
+  color: white;
+}
+
+.result-date {
+  margin: 5px 0;
+  font-size: 12px;
+  color: #888;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1, h2 {
+    font-size: 24px;
+  }
+
+  .result-card {
+    padding: 15px;
+    margin: 12px 0;
+  }
+
+  .result-game {
+    font-size: 14px;
+  }
+
+  .result-prediction {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 10px 15px;
+    margin: 8px;
+    font-size: 14px;
+  }
 }
